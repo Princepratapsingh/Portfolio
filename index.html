@@ -11,7 +11,12 @@
     <nav class="navbar">
         <div class="nav-container">
             <div class="logo">Prince Pratap Singh</div>
-            <ul class="nav-menu">
+            <div class="hamburger" id="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <ul class="nav-menu" id="nav-menu">
                 <li><a href="#home" class="nav-link">Home</a></li>
                 <li><a href="#about" class="nav-link">About</a></li>
                 <li><a href="#projects" class="nav-link">Projects</a></li>
@@ -23,10 +28,11 @@
 
     <!-- Hero Section -->
     <section id="home" class="hero">
+        <div class="code-background" id="code-bg"></div>
         <div class="hero-content">
-            <h1>Hi, I'm Prince Pratap Singh</h1>
-            <p class="tagline">Operations Engineer & Data Analyst | BCA Graduate</p>
-            <a href="#projects" class="cta-button">View My Work</a>
+            <h1>Prince Pratap Singh</h1>
+            <p class="tagline">Operations Engineer & Data Analyst</p>
+            <a href="#projects" class="cta-button">View Projects</a>
         </div>
     </section>
 
@@ -34,8 +40,8 @@
     <section id="about" class="about">
         <div class="container">
             <h2>About Me</h2>
-            <p>Motivated BCA graduate with 6 months of paid internship experience as an Operations Intern at DotPe. Specialized in API integrations, data analysis, and supporting enterprise SaaS environments. I have a strong foundation in Python, SQL, and data validation with proven expertise in debugging integration issues and cross-functional collaboration.</p>
-            <p>I'm passionate about solving complex problems through data-driven insights and technical excellence. My experience includes working with 30+ enterprise clients and analyzing system logs to identify performance bottlenecks and root causes.</p>
+            <p>Motivated BCA graduate with 6 months of paid internship experience at DotPe. Specialized in API integrations, data analysis, and enterprise SaaS support. Strong foundation in Python, SQL, and data validation with expertise in debugging integration issues.</p>
+            <p>Passionate about solving complex problems through data-driven insights. Experience includes working with 30+ enterprise clients and analyzing system logs to identify performance bottlenecks.</p>
         </div>
     </section>
 
@@ -46,41 +52,38 @@
             <div class="projects-grid">
                 <div class="project-card">
                     <div class="project-image" style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);"></div>
-                    <h3>Operations Intern – API Integrations</h3>
-                    <p>6-month internship at DotPe handling enterprise client integration issues, API log analysis, and workflow optimization for clients like Subway and Baskin Robbins.</p>
+                    <h3>Operations Intern – DotPe</h3>
+                    <p>6-month internship handling API integrations, client support for 30+ enterprises (Subway, Baskin Robbins), and workflow optimization.</p>
                     <div class="project-tags">
                         <span>API Integration</span>
                         <span>SQL</span>
                         <span>Data Analysis</span>
                         <span>Postman</span>
                     </div>
-                    <a href="#" class="project-link">View Details →</a>
                 </div>
 
                 <div class="project-card">
                     <div class="project-image" style="background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);"></div>
-                    <h3>Crop Yield Prediction Using ML</h3>
-                    <p>Developed an ML model to predict agricultural yield using supervised learning algorithms with comprehensive data preprocessing and feature engineering.</p>
+                    <h3>Crop Yield Prediction</h3>
+                    <p>ML model for agricultural yield prediction using supervised learning algorithms with data preprocessing and feature engineering.</p>
                     <div class="project-tags">
                         <span>Python</span>
                         <span>Machine Learning</span>
                         <span>Pandas</span>
                         <span>Sklearn</span>
                     </div>
-                    <a href="#" class="project-link">View Project →</a>
                 </div>
 
                 <div class="project-card">
                     <div class="project-image" style="background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);"></div>
                     <h3>Data Analysis & ETL</h3>
-                    <p>Expertise in SQL-based data validation, Excel pivot tables, VLOOKUP functions, and ETL processes for enterprise data workflows and reporting.</p>
+                    <p>Expertise in SQL data validation, Excel analytics, and ETL processes for enterprise data workflows and reporting.</p>
                     <div class="project-tags">
                         <span>SQL</span>
                         <span>Excel</span>
                         <span>Data Cleaning</span>
                         <span>Redash</span>
                     </div>
-                    <a href="#" class="project-link">View Details →</a>
                 </div>
             </div>
         </div>
@@ -96,29 +99,29 @@
                     <ul>
                         <li>Python</li>
                         <li>Java</li>
-                        <li>Data Structures & Algorithms</li>
+                        <li>DSA</li>
                         <li>Git</li>
-                        <li>Debugging & Problem Solving</li>
+                        <li>Debugging</li>
                     </ul>
                 </div>
                 <div class="skill-category">
                     <h3>Data & Databases</h3>
                     <ul>
                         <li>SQL & MySQL</li>
-                        <li>Excel (Pivot Tables, VLOOKUP)</li>
-                        <li>Data Cleaning & Validation</li>
+                        <li>Excel (Pivot, VLOOKUP)</li>
+                        <li>Data Cleaning</li>
                         <li>ETL Basics</li>
-                        <li>Reporting & Analytics</li>
+                        <li>Analytics</li>
                     </ul>
                 </div>
                 <div class="skill-category">
-                    <h3>Tools & Frameworks</h3>
+                    <h3>Tools</h3>
                     <ul>
-                        <li>Postman (API Testing)</li>
-                        <li>Redash (Analytics)</li>
-                        <li>Pandas, NumPy, Matplotlib</li>
-                        <li>Sklearn (ML)</li>
-                        <li>API Integrations</li>
+                        <li>Postman</li>
+                        <li>Redash</li>
+                        <li>Pandas, NumPy</li>
+                        <li>Sklearn</li>
+                        <li>API Integration</li>
                     </ul>
                 </div>
             </div>
@@ -129,29 +132,49 @@
     <section id="contact" class="contact">
         <div class="container">
             <h2>Get In Touch</h2>
-            <p>I'm always open to new opportunities and collaborations.</p>
-            <div class="contact-details">
-                <p class="contact-info"><strong>Phone:</strong> +91 9719521559</p>
-                <p class="contact-info"><strong>Email:</strong> <a href="mailto:singhprincepratap5@gmail.com">singhprincepratap5@gmail.com</a></p>
-                <p class="contact-info"><strong>Location:</strong> Etah, Uttar Pradesh</p>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <div class="contact-details">
+                        <p><strong>📱 Phone:</strong> +91 9719521559</p>
+                        <p><strong>📧 Email:</strong> <a href="mailto:singhprincepratap5@gmail.com">singhprincepratap5@gmail.com</a></p>
+                        <p><strong>📍 Location:</strong> Gurugram, Haryana</p>
+                    </div>
+                </div>
+                <div class="contact-form-container">
+                    <h3>Send Message</h3>
+                    <form class="contact-form" id="contactForm">
+                        <div class="form-group">
+                            <input type="text" id="subject" placeholder="Subject" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" id="email" placeholder="Your Email" required>
+                        </div>
+                        <div class="form-group">
+                            <textarea id="message" placeholder="Your Message" rows="5" required></textarea>
+                        </div>
+                        <button type="submit" class="submit-btn">Send Message</button>
+                    </form>
+                </div>
             </div>
-            <form class="contact-form" id="contactForm">
-                <input type="text" placeholder="Your Name" required>
-                <input type="email" placeholder="Your Email" required>
-                <textarea placeholder="Your Message" rows="6" required></textarea>
-                <button type="submit" class="submit-btn">Send Message</button>
-            </form>
         </div>
     </section>
 
     <!-- Footer -->
     <footer class="footer">
         <div class="container">
-            <p>&copy; 2025 Prince Pratap Singh. All rights reserved.</p>
-            <div class="social-links">
-                <a href="https://github.com/Princepratapsingh/" class="social-link">GitHub</a>
-                <a href="https://www.linkedin.com/in/prince-pratap-singh-443480241/" class="social-link">LinkedIn</a>
-                <a href="mailto:singhprincepratap5@gmail.com" class="social-link">Email</a>
+            <div class="footer-content">
+                <div class="footer-links">
+                    <a href="https://www.linkedin.com/in/prince-pratap-singh-443480241/" class="footer-link linkedin" target="_blank">
+                        <span>💼 LinkedIn</span>
+                    </a>
+                    <a href="https://github.com/Princepratapsingh/" class="footer-link github" target="_blank">
+                        <span>💻 GitHub</span>
+                    </a>
+                    <a href="mailto:singhprincepratap5@gmail.com" class="footer-link email">
+                        <span>📧 Email</span>
+                    </a>
+                </div>
+                <p class="footer-text">&copy; 2025 Prince Pratap Singh. All rights reserved.</p>
             </div>
         </div>
     </footer>
